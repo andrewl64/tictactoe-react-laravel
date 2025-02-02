@@ -34,6 +34,9 @@ export default function AuthenticatedLayout({ header, children }) {
                         </div>
 
                         <div className="hidden sm:ms-6 sm:flex sm:items-center">
+                            <p className="mt-1">
+                                <img class="rounded-full w-[3rem]" src={'storage/uploads/admin_imgs/'+user.img} alt="profile_pic" />
+                            </p>
                             <div className="relative ms-3">
                                 <Dropdown>
                                     <Dropdown.Trigger>
@@ -138,6 +141,9 @@ export default function AuthenticatedLayout({ header, children }) {
 
                     <div className="border-t border-gray-200 pb-1 pt-4 dark:border-gray-600">
                         <div className="px-4">
+                            <div className="mt-1 mb-1">
+                                <img class="rounded-full w-[3rem]" src={'storage/uploads/admin_imgs/'+user.img} alt="profile_pic" />
+                            </div>
                             <div className="text-base font-medium text-gray-800 dark:text-gray-200">
                                 {user.name}
                             </div>
